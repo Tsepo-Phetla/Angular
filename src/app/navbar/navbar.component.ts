@@ -11,6 +11,7 @@ constructor(){}
 menuVariable:boolean = false;
 menu_icon_Varriable:boolean = false;
 
+
 openMenu(){
   this.menuVariable =! this.menuVariable;
   this.menu_icon_Varriable =! this.menu_icon_Varriable;

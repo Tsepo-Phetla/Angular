@@ -1,17 +1,15 @@
 .download-link {
   position: absolute;
-  bottom: 0;
-  right: 0;
-
-  transform: translateX(-180%);
-  margin-bottom: 120px;
+  bottom: 130px;
+  right: 100px;
+  transform: translateX(-80%);
   transition: transform 0.3s ease; 
 }
 
 .download-button {
+  width: 210px;
   background-color: #00ffff;
   color: white;
-  padding: 10px 20px;
   border: none;
   cursor: pointer;
   border-radius: 5px;
@@ -22,13 +20,11 @@
 }
 
 /* Define a media query for phones and small screens */
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 600px)  {
   .download-link {
-    position: fixed; /* Change to fixed for centered positioning */
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-60%, 05%); 
-    margin: 0; 
+    display: block; /* Change to fixed for centered positioning */
+    left: 45%; /* Center horizontally */
+    bottom: 40px; 
   }
 
   /* Add any other responsive styling as needed */

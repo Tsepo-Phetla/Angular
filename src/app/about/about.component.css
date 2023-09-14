@@ -61,9 +61,10 @@ body {
     color: #333;
 }
 
-@media (max-width: 999px) {
+@media only screen and (max-width: 600px)  {
     .about-content {
      text-align: center;
+     padding: 17px;
      align-items: center;
      font-size: medium;
      font-size: 1rem;
@@ -73,6 +74,13 @@ body {
      display: flex;
   flex-direction: column;
     }
+    .image img {
+  width: 258px;
+            height: 297px;
+       margin:10px;
+       border: 2px solid #00ffff;
+       transform: translateX(50px);
+     }
 .content{
     text-align: center;
     align-items: center;

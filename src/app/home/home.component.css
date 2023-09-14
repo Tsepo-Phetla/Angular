@@ -27,6 +27,14 @@ body{
   width: 500px;
   margin-top: 30px;
 }
+.home-sci{
+  margin-top: 100px;
+  width: 300px;
+  text-align: center;
+}
+.bx{
+  line-height: normal;
+}
 .home-sci a{
 display: inline-flex;
 justify-content: center;
@@ -67,10 +75,10 @@ margin-top: 30px;
 }
 
 /* Define a media query for phones and small screens */
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 600px)  {
   .home {
     padding: 50px 5% 0;
-    height: 100vh; 
+    height: 89vh; 
     background-position: top; 
   }
   body{
@@ -85,14 +93,24 @@ margin-top: 30px;
   .home-content p {
     font-size: 14px; 
     width: auto; /* Remove fixed width for smaller screens */
-    margin-top: 250px; /* Adjust margin for smaller screens */
+    margin-top: 290px; /* Adjust margin for smaller screens */
   }
 
   .image-container {
     width: 200px; /* Decrease image container width for smaller screens */
     height: 200px; /* Decrease image container height for smaller screens */
-    transform: translate(-50%, -90%); 
+    transform: translate(-50%, -70%); 
   }
+
+  .home-sci {
+    margin-top: 30px;
+    width: 300px;
+    margin-left: 9px;
+  }
+  .bx {
+    line-height: unset;
+  }
+
 
   /* Add more CSS rules and adjustments as needed */
 }

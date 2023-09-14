@@ -60,10 +60,20 @@ vertical-align: middle;
   margin-right: 5px;
 }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 600px)  {
+    .logo {
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .logo img {
+      object-fit: cover;
+        width: 150%;
+    }
     .menu{
+        display: none;
         position: absolute;
-        right: -280px;
+        right: 0px;
         top: 64px;
         background: black;
         width: 280px;
@@ -108,5 +118,6 @@ transform: rotate(40deg);
     .menuClass{
         right: 0;
         transition: 0.4s ease-in-out;
+        display: block;
     }
 }

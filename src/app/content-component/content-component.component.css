@@ -124,7 +124,7 @@
    }
    
    /* Media Query for Smaller Screens */
-   @media (max-width: 768px) {
+   @media only screen and (max-width: 600px)  {
      .container {
        max-width: 100%;
        margin-right: 0;

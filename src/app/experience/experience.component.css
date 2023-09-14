@@ -7,7 +7,7 @@
     color: black;
 }
 
-@media (max-width:768px) {
+@media only screen and (max-width: 600px)  {
     .experience{
        position: relative;
        font-size: 1rem;
