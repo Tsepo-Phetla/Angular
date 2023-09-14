@@ -1,0 +1,36 @@
+.download-link {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  transform: translateX(-180%);
+  margin-bottom: 120px;
+  transition: transform 0.3s ease; 
+}
+
+.download-button {
+  background-color: #00ffff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.download-button:hover {
+  background-color: #0099cc;
+  box-shadow: 0 0 20px #00ffff;
+}
+
+/* Define a media query for phones and small screens */
+@media screen and (max-width: 767px) {
+  .download-link {
+    position: fixed; /* Change to fixed for centered positioning */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-60%, 05%); 
+    margin: 0; 
+  }
+
+  /* Add any other responsive styling as needed */
+}
+

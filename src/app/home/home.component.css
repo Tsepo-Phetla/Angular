@@ -1,0 +1,98 @@
+body{
+  margin:0;
+  padding:0;
+}
+.home{
+  position: relative;
+  width: 100%;
+  justify-content: space-between;
+  height: 90vh;
+  background:url("../../assets/images/po.webp");
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  padding: 70px 10% 0;
+}
+.home-content{
+  font-size: 32px;
+  font-weight: 700;
+  margin: -3px 0;
+  color: white;
+  margin-top:60px;
+}
+.home-content p{
+  font-size: 15px;
+  padding: 10px;
+  color:white;
+  width: 500px;
+  margin-top: 30px;
+}
+.home-sci a{
+display: inline-flex;
+justify-content: center;
+width: 40px;
+height: 40px;
+background: transparent;
+border: 1px solid #00ffff;
+border-radius: 50%;
+text-decoration: none;
+color: aqua;
+margin: 30px 20px 30px;
+margin-top: 30px;
+}
+.home-sci a:hover{
+  background-color: #0099cc;
+  color:#081b29;
+  box-shadow: 0 0 20px #00ffff;
+}
+.image-container {
+  width: 300px; 
+  height: 300px;
+  border-radius: 50%; 
+  overflow: hidden; 
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); 
+  float: right;
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(70%, -70%);
+  border: 4px solid #00ffff;
+}
+
+.image-container img {
+  width: 100%; 
+  height: auto; 
+  display: flex;
+  object-fit: cover; 
+}
+
+/* Define a media query for phones and small screens */
+@media screen and (max-width: 767px) {
+  .home {
+    padding: 50px 5% 0;
+    height: 100vh; 
+    background-position: top; 
+  }
+  body{
+    margin:0;
+    padding:0;
+  }
+  .home-content {
+    font-size: 24px; 
+    margin-top: 30px; 
+  }
+
+  .home-content p {
+    font-size: 14px; 
+    width: auto; /* Remove fixed width for smaller screens */
+    margin-top: 250px; /* Adjust margin for smaller screens */
+  }
+
+  .image-container {
+    width: 200px; /* Decrease image container width for smaller screens */
+    height: 200px; /* Decrease image container height for smaller screens */
+    transform: translate(-50%, -90%); 
+  }
+
+  /* Add more CSS rules and adjustments as needed */
+}
