@@ -75,7 +75,7 @@ margin-top: 30px;
 }
 
 /* Define a media query for phones and small screens */
-@media only screen and (max-width: 600px)  {
+@media screen and (max-width: 390px)   {
   .home {
     padding: 50px 5% 0;
     height: 89vh; 
@@ -113,4 +113,46 @@ margin-top: 30px;
 
 
   /* Add more CSS rules and adjustments as needed */
+}
+
+
+@media screen and (max-width: 844px) and (orientation: landscape) {
+  .home {
+    padding: 50px 5% 0;
+    height: 89vh; 
+    background-position: top; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  body{
+    margin:0;
+    padding:0;
+  }
+  .home-content {
+    font-size: 24px; 
+    margin-top: 30px; 
+  }
+
+  .home-content p {
+    font-size: 14px; 
+    width: auto; /* Remove fixed width for smaller screens */
+    margin-top: 290px; /* Adjust margin for smaller screens */
+  }
+
+  .image-container {
+    width: 200px; /* Decrease image container width for smaller screens */
+    height: 200px; /* Decrease image container height for smaller screens */
+    transform: translate(-50%, -70%); 
+  }
+
+  .home-sci {
+    margin-top: 30px;
+    width: 300px;
+    margin-left: 9px;
+  }
+  .bx {
+    line-height: unset;
+  }
+
 }
